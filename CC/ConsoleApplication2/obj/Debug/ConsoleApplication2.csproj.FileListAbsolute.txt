@@ -1,8 +1,0 @@
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\bin\Debug\ClassLibrary1.dll
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\bin\Debug\ClassLibrary1.pdb
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
-W:\Projects\githubprojects\Labs\CC\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb

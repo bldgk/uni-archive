@@ -1,5 +1,0 @@
-W:\Projects\githubprojects\Labs\CC\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
-W:\Projects\githubprojects\Labs\CC\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-W:\Projects\githubprojects\Labs\CC\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-W:\Projects\githubprojects\Labs\CC\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-W:\Projects\githubprojects\Labs\CC\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

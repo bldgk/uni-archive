@@ -1,0 +1,27 @@
+# Build output
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.sdf
+*.suo
+*.user
+*.cache
+
+# IDE
+.vs/
+*.csproj.user
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MATLAB
+*.asv
+
+# Temp
+*.tmp
+*.log
