@@ -12,3 +12,4 @@ A collection of university projects (2014–2015). Not homework dumps — only p
 | [fpu-arithmetic](fpu-arithmetic/) | x87 FPU arithmetic with hand-rolled float-to-string conversion | x86 Assembly |
 | [hash-table](hash-table/) | Hash table with separate chaining and polynomial rolling hash | C++ |
 | [keygen](keygen/) | License key generator/validator tied to MAC address | C++ |
+| [prolog-ai](prolog-ai/) | Monkey & banana, DFS/BFS graph search, expert system, Brainfuck interpreter | Prolog |
