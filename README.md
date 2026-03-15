@@ -14,3 +14,6 @@ A collection of university projects (2014–2015). Not homework dumps — only p
 | [keygen](keygen/) | License key generator/validator tied to MAC address | C++ |
 | [prolog-ai](prolog-ai/) | Monkey & banana, DFS/BFS graph search, expert system, Brainfuck interpreter | Prolog |
 | [prng](prng/) | Pseudo-random number generators (LCG, bit-shuffle) with chi-squared test | Python |
+| [mcu-8051](mcu-8051/) | Intel 8051 microcontroller: timers, UART, LCD, memory, subroutines | 8051 Assembly, C |
+| [mcu-avr](mcu-avr/) | AVR ATmega: ADC + 7-segment display, stepper motor, PWM speed control | C (avr-gcc) |
+| [ml-algorithms](ml-algorithms/) | ML from scratch: K-Means, DBSCAN, hierarchical clustering, genetic algorithm, simulated annealing | Python |
