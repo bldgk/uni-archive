@@ -1,8 +1,8 @@
 from phorel import *
 
 class phorel2(phorel):
-    def __init__(self,disctance:callable=d.minkovski):
-        phorel.__init__(self,disctance)
+    def __init__(self,distance:callable=d.minkovski):
+        phorel.__init__(self,distance)
 
     def fit(self,data,n_classes=3,initial_r=5,step=0.5):
         classes=[]

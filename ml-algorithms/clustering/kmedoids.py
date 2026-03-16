@@ -3,7 +3,7 @@ import distance as d
 import random
 
 class kmedoids:
-    def __init__(self,data,n_centers,distance=d.manheten):
+    def __init__(self,data,n_centers,distance=d.manhattan):
         self.data=data
         self.distance=distance
         self.n_centers=n_centers        

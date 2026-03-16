@@ -5,7 +5,7 @@ import random
 class kmeans:
     def __init__(self,data,n_centers):
         self.data=data
-        self.distance=d.eucledian
+        self.distance=d.euclidean
         self.n_centers=n_centers
         first_center=np.asarray([random.randint(int(np.min(data)),int(np.max(data))),random.randint(int(np.min(data)),int(np.max(data)))])
         self.centers=[first_center]

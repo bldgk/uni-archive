@@ -12,10 +12,10 @@ def distance_matrix(matrix_x,matrix_y,distance:callable):
 def minkovski(x,y,p=2):
     return np.power(np.sum(np.abs((x-y)**p)),1/p)
 
-def manheten(x,y):
+def manhattan(x,y):
     return minkovski(x,y,1)
 
-def eucledian(x,y):
+def euclidean(x,y):
     return minkovski(x,y,2)
 
 def chebyshev(x,y):

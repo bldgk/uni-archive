@@ -7,14 +7,14 @@ def randomoptimize(domain, costf):
     bestr = None
     for i in range(1000):
         # Generate random solution
-        r = [random.randint(domain[i][0], domain[i][1])
-             for i in range(len(domain))]
+        r = [random.randint(domain[j][0], domain[j][1])
+             for j in range(len(domain))]
         cost = costf(r)
         # Keep if better than current best
         if cost < best:
             best = cost
             bestr = r
-            return r
+    return bestr
 
 def geneticoptimize(domain, costf, popsize=50, step=1, mutprob=0.2, elite=0.2, maxiter=100):
     # Mutation: tweak one gene by +/- step
@@ -24,6 +24,7 @@ def geneticoptimize(domain, costf, popsize=50, step=1, mutprob=0.2, elite=0.2, m
             return vec[0:i] + [vec[i] - step] + vec[i+1:]
         elif vec[i] < domain[i][1]:
             return vec[0:i] + [vec[i] + step] + vec[i+1:]
+        return vec[:]
 
     # Crossover: single-point splice of two parents
     def crossover(r1, r2):
@@ -33,8 +34,8 @@ def geneticoptimize(domain, costf, popsize=50, step=1, mutprob=0.2, elite=0.2, m
     # Build initial population
     pop = []
     for i in range(popsize):
-        vec = [random.randint(domain[i][0], domain[i][1])
-               for i in range(len(domain))]
+        vec = [random.randint(domain[j][0], domain[j][1])
+               for j in range(len(domain))]
         pop.append(vec)
 
     topelite = int(elite * popsize)
@@ -51,11 +52,11 @@ def geneticoptimize(domain, costf, popsize=50, step=1, mutprob=0.2, elite=0.2, m
         # Fill population with mutations and crossovers
         while len(pop) < popsize:
             if random.random() < mutprob:
-                c = random.randint(0, topelite)
+                c = random.randint(0, topelite - 1)
                 pop.append(mutate(ranked[c]))
             else:
-                c1 = random.randint(0, topelite)
-                c2 = random.randint(0, topelite)
+                c1 = random.randint(0, topelite - 1)
+                c2 = random.randint(0, topelite - 1)
                 pop.append(crossover(ranked[c1], ranked[c2]))
 
         print(scores[0][0])
@@ -81,7 +82,7 @@ def annealingoptimize(domain, costf, T=10000.0, cool=0.95, step=1):
         # Compare costs
         ea = costf(vec)
         eb = costf(vecb)
-        p = pow(math.e, (-eb - ea) / T)
+        p = pow(math.e, -(eb - ea) / T)
 
         # Accept if better, or probabilistically if worse
         if eb < ea or random.random() < p:
@@ -101,9 +102,9 @@ def hillclimb(domain, costf):
         neighbors = []
         for j in range(len(domain)):
             if sol[j] > domain[j][0]:
-                neighbors.append(sol[0:j] + [sol[j] + 1] + sol[j+1:])
-            if sol[j] < domain[j][1]:
                 neighbors.append(sol[0:j] + [sol[j] - 1] + sol[j+1:])
+            if sol[j] < domain[j][1]:
+                neighbors.append(sol[0:j] + [sol[j] + 1] + sol[j+1:])
 
         # Find best neighbor
         current = costf(sol)

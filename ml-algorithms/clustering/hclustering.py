@@ -131,7 +131,9 @@ class hclustering:
 
         return [res[tuple(i)] for i in self.data]
 
-    def leaf_search(self,tree,leafs=[]):
+    def leaf_search(self,tree,leafs=None):
+        if leafs is None:
+            leafs=[]
         if not (tree.right and tree.left):
             if tree not in leafs:
                 leafs.append(tree)

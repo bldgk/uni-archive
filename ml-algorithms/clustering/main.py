@@ -28,7 +28,7 @@ if __name__=='__main__':
         [2,5],
         [3,7]        
     ])
-    db=dbscan(data,1.9,d.eucledian)
+    db=dbscan(data,1.9,d.euclidean)
     r=db.fit_predict()
     plt.ylim([0,10])
     plt.xlim([0,10])
