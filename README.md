@@ -19,3 +19,4 @@ A collection of university history (2013–2017).
 | [ml-algorithms](ml-algorithms/) | ML from scratch: K-Means, DBSCAN, hierarchical clustering, genetic algorithm, simulated annealing | Python |
 | [huffman](huffman/) | Huffman coding encoder/decoder with tree visualization | Python |
 | [scada-scripts](scada-scripts/) | Industrial process control: heater, furnace, grain elevator + Modbus IEEE 754 float lib | VBScript |
+| [os](os/) | A minimal x86 operating system kernel that boots from a floppy disk image. Written in x86 assembly and C, it demonstrates the full boot process from BIOS power-on to a running 32-bit protected mode kernel. | C, Assembly |

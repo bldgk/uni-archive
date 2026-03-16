@@ -1,0 +1,353 @@
+#ifndef KEYDEFS_H
+#define KEYDEFS_H
+
+#define KNULL 0
+#define KBACKSPACE 14
+#define KTAB 15
+#define KESC 1
+#define KENTER 28
+#define KCTRL 29
+#define KLEFT_SHIFT 42
+#define KRIGHT_SHIFT 54
+#define KALT 56
+#define KSPACE 57
+#define KCAPS_LOCK 58
+#define KNUM_LOCK 69
+#define KSCROLL_LOCK 70
+#define KDEL 83
+#define KHOME 71
+#define KPAGEUP 73
+#define KEND 79
+#define KPAGEDOWN 81
+#define KINSERT 82
+#define KLEFT 75
+#define KRIGHT 77
+#define KUP 72
+#define KDOWN 80
+#define KWWW 50
+#define KMAIL 108
+#define KFAVORITES 102
+#define KVOLUMEUP 48
+#define KVOLUMEDOWN 46
+#define KMUTE 32
+#define KPLAYPAUSE 34
+#define KMEDIA 109
+#define KF1 59
+#define KF2 60
+#define KF3 61
+#define KF4 62
+#define KF5 63
+#define KF6 64
+#define KF7 65
+#define KF8 66
+#define KF9 67
+#define KF10 68
+#define KF11 87
+#define KF12 88
+
+#define BACKSPACE 8
+#define TAB '\t'
+#define ENTER '\n'
+#define RETURN '\t'
+#define SPACE ' '
+
+#define KMETA_ALT 0x01
+#define KMETA_CTRL 0x02
+#define KMETA_SHIFT 0x04
+
+#define KSCROLL_LED 0x01
+#define KNUM_LED 0x02
+#define KCAPS_LED 0x04
+
+#define KEYPRESS 0x80
+#define KEYPORT 0x60
+
+unsigned char scancode[] = {
+    KNULL, // 0
+    KESC, // 1
+    0, // 2
+    0, // 3
+    0, // 4
+    0, // 5
+    0, // 6
+    0, // 7
+    0, // 8
+    0, // 9
+    0, // 10
+    0, // 11
+    0, // 12
+    0, // 13
+    KBACKSPACE, // 14
+    KTAB, // 15
+    0, // 16
+    0, // 17
+    0, // 18
+    0, // 19
+    0, // 20
+    0, // 21
+    0, // 22
+    0, // 23
+    0, // 24
+    0, // 25
+    0, // 26
+    0, // 27
+    KENTER, // 28
+    KCTRL, // 29
+    0, // 30
+    0, // 31
+    KMUTE, // 32
+    0, // 33
+    KPLAYPAUSE, // 34
+    0, // 35
+    0, // 36
+    0, // 37
+    0, // 38
+    0, // 39
+    0, // 40
+    0, // 41
+    KLEFT_SHIFT, // 42
+    0, // 43
+    0, // 44
+    0, // 45
+    KVOLUMEDOWN, // 46
+    0, // 47
+    KVOLUMEUP, // 48
+    0, // 49
+    KWWW, // 50
+    0, // 51
+    0, // 52
+    0, // 53
+    KRIGHT_SHIFT, // 54
+    0, // 55
+    KALT, // 56
+    KSPACE, // 57
+    KCAPS_LOCK, // 58
+    KF1, // 59
+    KF2, // 60
+    KF3, // 61
+    KF4, // 62
+    KF5, // 63
+    KF6, // 64
+    KF7, // 65
+    KF8, // 66
+    KF9, // 67
+    KF10, // 68
+    KNUM_LOCK, // 69
+    KSCROLL_LOCK, // 70
+    KHOME, // 71
+    KUP, // 72
+    KPAGEUP, // 73
+    0, // 74
+    KLEFT, // 75
+    0, // 76
+    KRIGHT, // 77
+    0, // 78
+    KEND, // 79
+    KDOWN, // 80
+    KPAGEDOWN, // 81
+    KINSERT, // 82
+    KDEL, // 83
+    0, // 84
+    0, // 85
+    0, // 86
+    KF11, // 87
+    KF12, // 88
+    0, // 89
+    0, // 90
+    0, // 91
+    0, // 92
+    0, // 93
+    0, // 94
+    0, // 95
+    0, // 96
+    0, // 97
+    0, // 98
+    0, // 99
+    0, // 100
+    0, // 101
+    KFAVORITES, // 102
+    0, // 103
+    0, // 104
+    0, // 105
+    0, // 106
+    0, // 107
+    KMAIL, // 108
+    KMEDIA, // 109
+    0 // 110
+};
+
+unsigned char asciNonShift[] = {
+    0, // 0
+    0, // 1
+    '1', // 2
+    '2', // 3
+    '3', // 4
+    '4', // 5
+    '5', // 6
+    '6', // 7
+    '7', // 8
+    '8', // 9
+    '9', // 10
+    '0', // 11
+    '-', // 12
+    '=', // 13
+    BACKSPACE, // 14
+    TAB, // 15
+    'q', // 16
+    'w', // 17
+    'e', // 18
+    'r', // 19
+    't', // 20
+    'y', // 21
+    'u', // 22
+    'i', // 23
+    'o', // 24
+    'p', // 25
+    '[', // 26
+    ']', // 27
+    ENTER, // 28
+    0, // 29
+    'a', // 30
+    's', // 31
+    'd', // 32
+    'f', // 33
+    'g', // 34
+    'h', // 35
+    'j', // 36
+    'k', // 37
+    'l', // 38
+    ';', // 39
+    '\'', // 40
+    '`', // 41
+    0, // 42
+    '\\', // 43
+    'z', // 44
+    'x', // 45
+    'c', // 46
+    'v', // 47
+    'b', // 48
+    'n', // 49
+    'm', // 50
+    ',', // 51
+    '.', // 52
+    '/', // 53
+    0, // 54
+    '*', // 55
+    0, // 56
+    SPACE, // 57
+    0, // 58
+    0, // 59
+    0, // 60
+    0, // 61
+    0, // 62
+    0, // 63
+    0, // 64
+    0, // 65
+    0, // 66
+    0, // 67
+    0, // 68
+    0, // 69
+    0, // 70
+    '7', // 71
+    '8', // 72
+    '9', // 73
+    '-', // 74
+    '4', // 75
+    '5', // 76
+    '6', // 77
+    '+', // 78
+    '1', // 79
+    '2', // 80
+    '3', // 81
+    '0', // 82
+    '.' // 83
+};
+
+unsigned char asciShift[] = {
+    0, // 0
+    0, // 1
+    '!', // 2
+    '@', // 3
+    '#', // 4
+    '$', // 5
+    '%', // 6
+    '^', // 7
+    '&', // 8
+    '*', // 9
+    '(', // 10
+    ')', // 11
+    '_', // 12
+    '+', // 13
+    BACKSPACE, // 14
+    TAB, // 15
+    'Q', // 16
+    'W', // 17
+    'E', // 18
+    'R', // 19
+    'T', // 20
+    'Y', // 21
+    'U', // 22
+    'I', // 23
+    'O', // 24
+    'P', // 25
+    '{', // 26
+    '}', // 27
+    ENTER, // 28
+    0, // 29
+    'A', // 30
+    'S', // 31
+    'D', // 32
+    'F', // 33
+    'G', // 34
+    'H', // 35
+    'J', // 36
+    'K', // 37
+    'L', // 38
+    ':', // 39
+    '\"', // 40
+    '~', // 41
+    0, // 42
+    '|', // 43
+    'Z', // 44
+    'X', // 45
+    'C', // 46
+    'V', // 47
+    'B', // 48
+    'N', // 49
+    'M', // 50
+    '<', // 51
+    '>', // 52
+    '?', // 53
+    0, // 54
+    '*', // 55
+    0, // 56
+    SPACE, // 57
+    0, // 58
+    0, // 59
+    0, // 60
+    0, // 61
+    0, // 62
+    0, // 63
+    0, // 64
+    0, // 65
+    0, // 66
+    0, // 67
+    0, // 68
+    0, // 69
+    0, // 70
+    '7', // 71
+    '8', // 72
+    '9', // 73
+    '-', // 74
+    '4', // 75
+    '5', // 76
+    '6', // 77
+    '+', // 78
+    '1', // 79
+    '2', // 80
+    '3', // 81
+    '0', // 82
+    0 // 83
+};
+
+#endif
