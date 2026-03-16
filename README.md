@@ -1,6 +1,6 @@
 # uni-archive
 
-A collection of university projects (2014–2015). Not homework dumps — only projects with actual substance.
+A collection of university history (2013–2017).
 
 ## Projects
 
